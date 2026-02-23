@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSBshrine</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+  
+  <div id = container> 
+    <h1> <div id="wobble">  PLUS-TECH SQUEEZEBOX SHRINE </div> </h1>
+
+  <div id = "melonn" >
+    <h2>Welcome to the Plus-Tech Squeeze Box (PSB) Shrine! </h2>
+    <p> Hello! This is a passion project by <a href="https://michikira.neocities.org/">michikira</a>. this page contains most known information about PSB, their origins, and their appearances in media.</p>
+  </div> 
+
+  <div id = intro>
+  <h1> What's Plus-Tech Squeeze Box? </h1>
+  <p> PSB is a Japanese alternative rock/edm duo that started in around 1997. Their music is hard to describe with just one genre, but most people will describe it as shibuya kei or picopop. Hayashibe Tomonori, one of the members, explained that he describes his music as "panic pop".  </p>
+  </div>
+
+</div>
+
+    <p>To learn more HTML/CSS, check out these <a href="https://neocities.org/tutorials">tutorials</a>!</p>
+    
+    
+  <script type="text/javascript">
+// <![CDATA[
+var speed=50; // speed of wobbling, lower is faster
+var height=2; // height of wobbling in pixels
+var alink=""; // page to link text to (set to ="" for no link)
+
+/****************************
+*    Wobbly Text Effect     *
+*(c) 2003-6 mf2fm web-design*
+*  http://www.mf2fm.com/rv  *
+* DON'T EDIT BELOW THIS BOX *
+****************************/
+var wobtxt, wobble, wobcnt=0;
+window.onload=function() { if (document.getElementById) {
+  var i, wobli;
+  wobble=document.getElementById("wobble");
+  wobtxt=wobble.firstChild.nodeValue;
+  while (wobble.childNodes.length) wobble.removeChild(wobble.childNodes[0]);
+  for (i=0; i<wobtxt.length; i++) {
+    wobli=document.createElement("span");
+    wobli.setAttribute("id", "wobb"+i);
+    wobli.style.position="relative";
+    wobli.appendChild(document.createTextNode(wobtxt.charAt(i)));
+    if (alink) {
+      wobli.style.cursor="pointer";
+      wobli.onclick=function() { top.location.href=alink; }
+    }
+    wobble.appendChild(wobli);
+  }
+  setInterval("wobbler()", speed);
+}}
+
+function wobbler() {
+  for (var i=0; i<wobtxt.length; i++) document.getElementById("wobb"+i).style.top=Math.round(height*Math.sin(i+wobcnt))+"px"
+  wobcnt++;
+}
+// ]]>
+</script>
+  
+
+
+
+  
+<style>
+
+
+
+
+body {
+                margin: 0;
+                background-color: #47476b;
+                /* you can delete the line below if you'd prefer to not use an image */
+               background-repeat:no-repeat;
+               background-size:cover;
+                color: #47476b;
+                background-image: url(https://michikira.neocities.org/PSBshrine/graphics/psbBackground.png);
+                           
+            }
+            
+            
+@font-face {
+font-family: BuildingTracks;
+src: url('https://michikira.neocities.org/Fonts/BuildingsTracks_free/BuildingsTracks_free/Buildingsandundertherailwaytracksfree_ver.otf');
+font-weight: bold;
+ }
+
+
+
+#container {
+  max-width: 900px;
+                
+  margin: 0 auto;
+}
+
+#wobble {
+  font-family: BuildingTracks;
+  background-color: #ebf5d6;
+}
+
+
+#melonn 
+{
+  
+
+  background-color: #bddeed;
+}
+</style>
+
+
+
+  </body>
+</html>
+
+
+
+
+
