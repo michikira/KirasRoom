@@ -44,6 +44,7 @@ const headerEl = `
       <div class = "window-body" style="padding-top: 1em">
       <a href="#https://michikira.neocities.org">TOP</a>
       <a href="#webmaster">About Me!</a>
+      <a href=" https://michikira.neocities.org/PSBshrine/">Plus Tech Squeezebox Shrine</a>
     </nav>
     </div>
   </div>
